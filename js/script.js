@@ -65,11 +65,20 @@ createApp({
 
         next() {
             console.log('prossima');
+            this.activeItem++;
+            if (this.activeItem > slides.length - 1) {
+                this.activeItem = 0
+            }
 
         },
 
         prev() {
             console.log('precedente');
+            this.activeItem --;
+            if (this.activeItem < 0) {
+                this.activeItem = slides.length - 1
+            }
+
         }
     }
 
