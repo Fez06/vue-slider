@@ -79,7 +79,12 @@ createApp({
                 this.activeItem = slides.length - 1
             }
 
+        },
+
+        bigThumb() {
+            console.log('ciao')
         }
+
     }
 
 }).mount('#app');
